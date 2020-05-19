@@ -1,0 +1,14 @@
+$smallSize: 500px;
+
+@mixin tran-horizontal($percentage, $time) {
+  @if $percentage != 0 {
+    transform: translateX($percentage);
+    -moz-transform: translateX($percentage);
+    -webkit-transform: translateX($percentage);
+    -o-transform: translateX($percentage);
+  }
+  transition: transform $time ease;
+  -moz-transition: transform $time ease;
+  -webkit-transition: transform $time ease;
+  -o-transition: transform $time ease;
+}
